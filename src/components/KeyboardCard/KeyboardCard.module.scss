@@ -1,0 +1,113 @@
+.keyboard_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 235px;
+  width: 335px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s ease;
+  &:hover {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.keyboard_img {
+  flex: 1;
+  margin: 10px 0;
+  width: 260px;
+  object-fit: contain;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  img {
+    width: 24px;
+    height: 24px;   
+  }
+  button {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .add, .remove {
+    &:hover {
+      background-color: #5ec4ff !important;
+    }
+  }
+  .fav {
+    &:hover {
+      background-color: #fa7373 !important;
+    }
+  }
+}
+
+.lds_ring {
+  display: inline-block;
+  position: relative;
+  top: 63px;
+  width: 80px;
+  height: 80px;
+}
+.lds_ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #46b6f6;
+  border-radius: 50%;
+  animation: lds_ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #46b6f6 transparent transparent transparent;
+}
+.lds_ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds_ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds_ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .keyboard_card {
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+  }
+
+  .keyboard_img {
+    width: 90%;
+  }
+  
+  .buttons {
+    button {
+      height: 8vw;
+      width: 8vw;
+      border-radius: 1.5vw;
+    }
+    img {
+      height: 5.5vw;
+      width: 5.5vw;
+    }
+  }
+}

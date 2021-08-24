@@ -1,0 +1,48 @@
+@mixin button($width, $color, $hoverColor, $radius, $fontSize) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: $width;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  border-radius: $radius;
+  background-color: $color;
+  color: #ffffff;
+  transition: 0.1s ease;
+  font-size: $fontSize;
+  &:hover {
+    background-color: $hoverColor;
+    cursor: pointer;
+  }
+}
+
+.cart, .fav, .orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.4rem;
+  span {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    @include button(170px, #15a2f4, #46b6f6, 7px, 0.9rem);
+  }
+}
+
+.information .cart {
+  margin-top: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .information .cart {
+    margin-top: 10px;
+  }
+}

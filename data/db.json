@@ -1,0 +1,61 @@
+{
+  "keyboards": [
+    {
+      "id": "1",
+      "title": "HyperX Alloy FPS PRO",
+      "price": "6499",
+      "image": "images/HyperX Alloy FPS PRO.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Logitech G PRO",
+      "price": "9999",
+      "image": "images/Logitech G Pro.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Corsair K63",
+      "price": "5999",
+      "image": "images/Corsair K63.jpg"
+    },
+    {
+      "id": "4",
+      "title": "ZET GAMING Spectrum",
+      "price": "4599",
+      "image": "images/ZET GAMING Spectrum.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Razer Huntsman Mini",
+      "price": "8999",
+      "image": "images/Razer.jpg"
+    },
+    {
+      "id": "6",
+      "title": "HP Pavilion Gaming 800",
+      "price": "5999",
+      "image": "images/HP Pavilion Gaming 800.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Red Square Keyrox TKL Classic",
+      "price": "5499",
+      "image": "images/Keyrox TKL classic.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Red Square Keyrox Classic",
+      "price": "5699",
+      "image": "images/Keyrox classic.jpg"
+    },
+    {
+      "id": "9",
+      "title": "SteelSeries APEX 7 TKL",
+      "price": "14999",
+      "image": "images/APEX 7 TKL.jpg"
+    }
+  ],
+  "cart": [],
+  "favorites": [],
+  "orders": []
+}
