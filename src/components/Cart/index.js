@@ -8,8 +8,7 @@ import AppContext from '../../context';
 
 function Cart({ isLoaded, isCartOpened, orderItems = [] }) {
 
-  const { cart, setCart, closeCart, setOrders } = useContext(AppContext);
-  const [orderCheck, setOrderCheck] = useState(false);
+  const { cart, setCart, closeCart, setOrders, orderCheck, setOrderCheck} = useContext(AppContext);
   const [orderId, setOrderId] = useState();
   const [isLoading, setIsLoading] = useState(false);
 

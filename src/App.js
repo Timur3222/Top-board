@@ -16,6 +16,7 @@ function App() {
   const [favorites, setFavorites] = useState([]);
   const [orders, setOrders] = useState([]);
   const [isCartOpened, setCartOpened] = useState(false);
+  const [orderCheck, setOrderCheck] = useState(false);
   const [isLoaded, setisLoaded] = useState(false);
   
   useEffect(() => {
@@ -50,10 +51,23 @@ function App() {
 
   const closeCart = () => {
     setCartOpened(false);
+    setOrderCheck(false);
   }
 
   return (
-    <AppContext.Provider value={{ cart, setCart, favorites, orders, setOrders, isAdded, isFavorite, closeCart }}>
+    <AppContext.Provider value={{ 
+      cart,
+      setCart,
+      favorites,
+      orders,
+      setOrders,
+      isAdded,
+      isFavorite,
+      closeCart,
+      orderCheck,
+      setOrderCheck
+    }}>
+      
       <div className="wrapper">
 
         <Header
