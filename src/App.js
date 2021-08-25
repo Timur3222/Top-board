@@ -51,7 +51,10 @@ function App() {
 
   const closeCart = () => {
     setCartOpened(false);
-    setOrderCheck(false);
+    
+    setTimeout(() => {
+      setOrderCheck(false);
+    }, 1000);
   }
 
   return (
