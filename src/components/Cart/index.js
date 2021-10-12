@@ -40,7 +40,7 @@ function Cart({ isLoaded, isCartOpened, orderItems = [] }) {
   }
 
   const summary = cart.reduce((summ, item) => {return summ + +item.price}, 0);
-console.log(isCartOpened)
+
   return (
     <div className={isCartOpened ? styles.overlay_active : styles.overlay}>
       <div onClick={closeCart} className={styles.close_click}></div>
